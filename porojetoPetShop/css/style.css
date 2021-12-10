@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto' ,sans-serif;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.row::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+#barra-superior{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    z-index: 99999;
+    background-color: #fff;
+}
+#logotipo{
+    margin-top: 10px;
+    float: left;
+    width: 20%;
+}
+#menu{
+    float: left;
+    width: 80%;
+   
+}
+
+#menu ul{
+    text-align: center;
+    margin-top: 15px;
+}
+#menu ul li{
+    display: inline;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#menu ul li a:hover{
+    color: #00A598;
+}
+
+#menu ul li a{
+    color: #000;
+    font-weight: bold;
+}
+#banner{
+    position: relative;
+    margin-top: 60px;
+    max-width: 100%;
+    height: 50%;
+    background: no-repeat fixed center;
+    background-size: cover;
+}
+
+#banner1{
+    background: url("../img/banner2.jpg") no-repeat;
+    background-position-y: 25%;
+    background-size: cover;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px black;
+    color: #fff;
+    height: 300px;
+    padding-top: 125px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+#banner-mensagem{
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    top: 30%;
+    left: 60%;
+    text-shadow: 2px 2px 5px #000;
+
+}
+
+#box-destaques{
+    margin-top:30px;
+}
+
+#box-destaques .col{
+    width:33.333333%;
+    float: left;
+    text-align: center;
+    padding-left: 15px;
+}
+
+#box-destaques .col img{
+    border-radius: 50%;
+}
+#box-video{
+    margin-top: 50px;
+}
+#box-video #video{
+    width: 50%;
+    float: left;
+}
+
+#box-video #video-descricao{
+    position: absolute;
+    text-align: left;
+    font-size: 1.2rem;
+    left: 50%;
+
+    padding-left: 100px;
+
+}
+
+#box-video #video-descricao p{
+    padding-top: 50px;
+}
+
+#box-video #video-descricao h2{
+padding-top: 20px;
+}
+
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.titulo::after{
+    display: block;
+    content: "";
+    background-color: #00A598;
+    height: 5px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.titulo1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.titulo1::after{
+    display: block;
+    content: "";
+    background-color: #00A598;
+    height: 5px;
+    width: 10%;
+    margin: 10px auto;
+}
+
+#banner-parallax{
+    background: url("../img/dog-banner.png") no-repeat fixed top;
+    background-size: cover;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px black;
+    color: #fff;
+    height: 300px;
+    padding-top: 125px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+#box-mural-fotos{
+    margin-top: 30px;
+}
+
+#box-mural-fotos .col{
+    margin-top: 30px;
+    float: left;
+    width: 17.36842105263158%;
+    margin-left: 35px;
+    
+}
+
+#box-mural-fotos h2{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+footer{
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgb(104, 96, 90);
+    color: #fff;
+}
+
+footer h2{
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+#icone-redes a i{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+footer p{
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+footer #contato{
+    padding-bottom: 30px;
+}
+
+#copy{
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+    background-color: #00A598;
+}
+
+#quem-somos{
+    margin-top: 30px;
+}
+#quem-somos #foto-quem{
+    background: url("../img/quem-somos.jpg") no-repeat center;
+    background-size: cover;
+    height: 300px;
+    width: 50%;
+    float: left;
+}
+
+#quem-somos #texto-quem{
+    width: 50%;
+    float: left;
+    padding: 30px;
+    text-align: left;
+}
+
+#imagens{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+padding-left: 160px;
+}
+.slide{
+    width: 1024px;
+    height: 576px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.4s;
+}
+
+.slides{
+    width: 5120px;
+    display: flex;
+}
+.images img{
+    width: 1024px;
+    height: 576px;
+}
+#atual{
+    transition: all 2s;
+}
+.btn{
+    position: absolute;
+    color:#00A598;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -5px;
+}
+.btn:hover{
+    transform: scale(1.5);
+}
+#voltar{
+    top: 100%;
+    left: 5%;
+}
+#next{
+    top: 100%;
+    left: 91%;
+}
+
+.balls{
+    position: absolute;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+}
+
+.balls div{
+    transition: all 0.5s;
+    border: 3px solid #00A598;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.balls div:hover{
+    background: black;
+}
+
+.imgAtual{
+    background: #00A598;
+    transition: all 0.5s;
+}
+
+.content{
+    margin-top: 30px;
+}
+
+.contato{
+    text-align: center;
+    
+}
+
+.contato h3{
+    margin-bottom: 15px;
+}
+
+.contato input, textarea{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.contato textarea{
+    width: 300px;
+    height: 100px;
+}
+
+.button{
+    background-color: #00A598;
+}
+
+.button:hover{
+    background-color: #01746a;
+}
